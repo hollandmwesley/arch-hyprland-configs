@@ -4,28 +4,29 @@
     "telemetry.devDeviceId": "80b1d143-f77e-4367-a5db-1bf2d51de11f",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1735198279301"
+                "folderUri": "file:///home/mack/.config/waybar"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "profileAssociations": {
-        "workspaces": {},
-        "emptyWindows": {
-            "1735198279301": "__default__profile__"
-        }
+        "workspaces": {
+            "file:///home/mack/.config/waybar": "__default__profile__"
+        },
+        "emptyWindows": {}
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/mack/.config/Code/Backups/1735198279301",
+            "folder": "file:///home/mack/.config/waybar",
+            "backupPath": "/home/mack/.config/Code/Backups/02671dfcd25019657ff892aa4cd9f810",
             "uiState": {
                 "mode": 1,
                 "x": 22,
-                "y": 547,
-                "width": 2516,
-                "height": 511
+                "y": 22,
+                "width": 1251,
+                "height": 1010
             }
         },
         "openedWindows": []
@@ -87,6 +88,42 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/mack/.config/waybar",
+                                        "path": "/home/mack/.config/waybar",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/waybar"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/mack/.config/waybar/style.css",
+                                        "path": "/home/mack/.config/waybar/style.css",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/waybar/style.css"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/mack/.config/waybar/config",
+                                        "path": "/home/mack/.config/waybar/config",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/waybar/config"
+                                },
+                                {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
@@ -118,17 +155,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config/hypr/hyperland.config"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/mack/.config/waybar/config",
-                                        "path": "/home/mack/.config/waybar/config",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/waybar/config"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -175,7 +201,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -275,6 +302,10 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -470,7 +501,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -1328,6 +1360,11 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1728,7 +1765,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 170,
             "statusBarHeight": 22,
             "windowBorder": false
         }
