@@ -1,0 +1,19 @@
+* {
+  background-color: #000000;
+  color: #00ffff; /* Neon Blue for text */
+  border: 2px solid #800080; /* Neon Purple for borders */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.active {
+  background-color: #ff00ff; /* Neon Pink when selecting an item */
+}
+
+.highlighted {
+  color: #00ff00; /* Neon Green for highlighted items */
+}
+
+.separator {
+  background-color: #2f2f2f; /* Dark Gray for separators */
+}
+
