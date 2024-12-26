@@ -1,0 +1,36 @@
+# ~/.config/wofi/config
+
+# General Settings
+font = "Iosevka 14"
+line-height = 25
+columns = 3
+rows = 10
+
+# Color Scheme
+background = #1e1e1e
+foreground = #f1f1f1
+highlight-background = #5f87d7
+highlight-foreground = #f1f1f1
+border-color = #444444
+
+# Border width and padding
+border-width = 2
+padding = 10
+
+# Window settings
+xoffset = 0
+yoffset = 0
+width = 600
+height = 400
+
+# List Mode: Applications to show in the launcher (drun, run, etc.)
+show = drun  # Use 'drun' for application launcher, 'run' for command launcher
+
+# Search options
+ignore-case = true
+use-fuzzy-search = true
+disable-sorting = false
+
+# Keybindings (if applicable)
+bindsym = MOD+Space, exec, wofi --show drun
+
