@@ -1,0 +1,16 @@
+#waybar {
+	background: #282a36;
+	color: #f8f8f2;
+	font-family: "Arial", sans-serif;
+	font-size: 12px;
+}
+
+#waybar .clock {
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+#waybar .network {
+	padding: 0 5px;
+}
+

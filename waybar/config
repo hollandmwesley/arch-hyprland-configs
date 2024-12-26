@@ -1,0 +1,22 @@
+{
+    "position": "top",
+    "modules-left": ["workspaces", "cpu", "memory"],
+    "modules-right": ["network", "alsa", "updates"],
+    "tray-position": "right", "clock": {
+        "format": "{:%Y-%m-%d %H:%M:%S}"
+    },
+    "network": {
+        "interface": "wlan0",
+    //  "format": 
+        "format-down": "No connection"
+    },
+    "cpu": {
+        "format": "{usage}%"
+    },
+    "memory": {
+        "format": "{used}/{total}MB"
+    },
+    "updates": {
+        "format": "{updates} updates"
+    }
+}
